@@ -1,0 +1,227 @@
+.navigacia {
+	background-color: #000;
+}
+
+nav img {
+	width: 75px;
+	height: auto;
+}
+
+.navigacia li a {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #F3EC5A !important;
+}
+
+.elementebi {
+	height: 120px;
+}
+
+.aboutus {
+	background: #EFEFEF;
+}
+
+#about {
+	border: 3px solid transparent;
+	border-image: linear-gradient(100deg, gold, silver) 1;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.contact {
+	border: 3px solid transparent;
+	border-image: linear-gradient(-100deg, gold, silver) 1;
+	margin: 0 auto;
+	padding: 10px;	
+}
+
+.gamotvla button {
+	font-size: 45px;
+	padding: 15px 90px;
+}
+
+.meter, .karat {
+	margin: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.act {
+	background: gold;
+}
+
+.kalkulatori {
+	border: 3px solid transparent;
+	border-image: linear-gradient(-100deg, gold, silver) 1;
+}
+
+.take input {
+	margin-top: 10px;
+	padding: 10px 30px;
+}
+
+.select2-container--default .select2-selection--single {
+  border-color: #fff;
+  height: 60px;
+  padding: 7.5px 0;
+  border-radius: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 58px;
+}
+
+.select2-dropdown {
+  border-radius: 0;
+  box-shadow: #444 0px 3px 5px;
+  border: 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+    .meter, .karat {
+    	margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-send {
+	background: gold;
+	color: #000;
+}
+
+
+.modal input[type=text], input[type=password] {
+	color: #fff;
+	background: transparent;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal input[type=text] {
+	border: 3px solid transparent;
+	border-image: linear-gradient(100deg, gold, silver) 1;
+}
+
+.modal input[type=password] {
+	border: 3px solid transparent;
+	border-image: linear-gradient(-100deg, gold, silver) 1;
+}
+
+.modal input:focus { 
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+.loginn {
+	background: transparent;
+	border: 3px solid transparent;
+	border-image: linear-gradient(100deg, gold, silver) 1;
+	padding: 10px 15px;
+    color: #fff;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    opacity: 0.8;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    opacity: 0.9;
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: transparent;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 320px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+	background: transparent;
+    position: absolute;
+    right: 13px;
+    top: -35px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: white;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
