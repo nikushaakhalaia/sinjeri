@@ -8,11 +8,55 @@ window.onclick = function(event) {
     }
 }
 
-$(function(){
-  $('.selectpicker').selectpicker({});
+$(document).ready(function(){
+
+$(document).ready(function(){
   
-  $(document).on('change','.dropdown-menu inner',function(e){
-    var img = $('selectpicker option:selected').attr('data-xxx');
-    alert(img);
-  });
+
+$('.slaideri').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 12,
+        slidesToScroll: 3,
+        responsive: [
+          {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 8,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+              }
+          },
+          {
+              breakpoint: 1028,
+              settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 2
+              }
+          },
+
+          {
+              breakpoint: 60,
+              settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 2
+              }
+          },
+
+          {
+              breakpoint: 426,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+              }
+          }
+        ]
+    });
+
+});	
+
+
+
 });

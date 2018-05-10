@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>სინჯერი - ჩვენ შესახებ</title>
+	<title>Sinjer • About Us</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Nika Akhalaia">
 
@@ -42,36 +42,60 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
-							<li class="nav-item active pr-3">
+							<li class="nav-item mr-3">
 								<a class="nav-link" href="index.html">
 									<i class="fas fa-home"></i> home
-									<span class="sr-only">(current)</span>
 								</a>
 							</li>
 
-							<li class="nav-item pr-3">
-								<a class="nav-link" href="#">
+							<li class="nav-item current mr-3">
+								<a class="nav-link " href="#">
 									<i class="fas fa-info"></i> about
 								</a>
 							</li>
 
-							<li class="nav-item pr-3">
-								<a class="nav-link" href="#videos">
+							<li class="nav-item mr-3">
+								<a class="nav-link" href="#color">
 									<i class="fas fa-map-marker"></i> color
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" href="#videos">
-									<i class="fas fa-question-circle"></i> faqs
+								<a class="nav-link" href="#">
+									<span onclick="document.getElementById('id01').style.display='block'">log in</span>
 								</a>
-							</li>			
+							</li>
+
+							<li class="nav-item mr-3">
+								<a class="nav-link" href="registration.html">
+									sign up
+								</a>
+							</li>
+
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
+
+	<div id="id01" class="modal">
+
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="container">
+				<input type="text" placeholder="Email or Phone" name="uname" required style="margin: 20px 0;">
+
+				<input type="password" placeholder="Password" name="psw" required style="margin-bottom: 10px;">
+
+				<button class="loginn float-right" type="submit">Log In</button>
+			</div>
+		</form>
+
+	</div>
 
 
 	<div class="container-fluid aboutus">
@@ -170,50 +194,17 @@
 
 			</div>
 		</div>
+	</div>	
+
+	<div class="container-fluid bg-dark">
+		<div class="container">
+			<footer class="pt-4 pb-4">
+				<h3>Project author • <a href="https://fb.com/matematikosi.filosofosi"  target="_blank">Giorgi Samkharadze</a></h3>
+				<h3>Designer • <a href="https://fb.com/ximshiashvili" target="_blank">Giorgi Khimshiashvili</a></h3>
+				<h3>Front-end developer • <a href="https://fb.com/nickakhalaia" target="_blank">Nika Akhalaia</a></h3>
+			</footer>
+		</div>
 	</div>
-
-	
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

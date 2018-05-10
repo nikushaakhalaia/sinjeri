@@ -13,8 +13,17 @@ nav img {
 	color: #F3EC5A !important;
 }
 
-.elementebi {
-	height: 120px;
+.navigacia li:hover {
+    border-bottom: 2px solid yellow;
+    transition: 0.7s all;
+}
+
+.current {
+    border-bottom: 2px solid yellow;
+}
+
+#webmenu{
+width:340px;
 }
 
 .aboutus {
@@ -28,6 +37,64 @@ nav img {
 	padding: 10px;
 }
 
+.elementebi {
+    width: 96%;
+}
+
+.slaideri {
+    text-align: center;
+    font-size: 15px;
+}
+
+.slick-prev:after {
+  content: "<";
+  color: gold;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.slick-next:before {
+  content: ">";
+  color: gold;
+  font-size: 30px;
+  font-weight: 700; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slaideri img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+
+
 .contact {
 	border: 3px solid transparent;
 	border-image: linear-gradient(-100deg, gold, silver) 1;
@@ -37,7 +104,8 @@ nav img {
 
 .gamotvla button {
 	font-size: 45px;
-	padding: 15px 90px;
+	padding: 15px 0;
+    width: 100%;
 }
 
 .meter, .karat {
@@ -46,8 +114,12 @@ nav img {
 	justify-content: center;
 }
 
-.act {
-	background: gold;
+button {
+    border: none;
+}
+
+button:focus {
+    outline: none;
 }
 
 .kalkulatori {
@@ -57,34 +129,26 @@ nav img {
 
 .take input {
 	margin-top: 10px;
-	padding: 10px 30px;
+	padding: 10px 20px;
 }
 
-.select2-container--default .select2-selection--single {
-  border-color: #fff;
-  height: 60px;
-  padding: 7.5px 0;
-  border-radius: 0;
+.kalkulacia {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: gold;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 58px;
-}
-
-.select2-dropdown {
-  border-radius: 0;
-  box-shadow: #444 0px 3px 5px;
-  border: 0;
-}
-
-
-
-
-
 
 @media only screen and (max-width: 992px) {
 
     .meter, .karat {
     	margin: 10px 0;
+    }
+
+    .take, .shua {
+        padding-bottom: 1.4rem;
     }
 }
 
@@ -224,4 +288,31 @@ nav img {
     .cancelbtn {
        width: 100%;
     }
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer a {
+    color: gold;
+}
+
+footer a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+
+.registration {
+    margin: 0 auto;
+    border: 5px solid transparent;
+    border-image: linear-gradient(150deg, gold, silver) 1;
+}
+
+.reg {
+    padding: 10px 20px;
+    background-color: gold;
 }

@@ -2,13 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>სინჯერი - მთავარი</title>
+	<title>Sinjer • Registration</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Nika Akhalaia">
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -42,47 +43,42 @@
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
-							<li class="nav-item active pr-3">
-								<a class="nav-link" href="#">
+							<li class="nav-item mr-3">
+								<a class="nav-link" href="index.html">
 									<i class="fas fa-home"></i> home
-									<span class="sr-only">(current)</span>
 								</a>
 							</li>
 
-							<li class="nav-item pr-3">
+							<li class="nav-item mr-3">
 								<a class="nav-link" href="about.html">
 									<i class="fas fa-info"></i> about
 								</a>
 							</li>
 
-							<li class="nav-item pr-3">
-								<a class="nav-link" href="#videos">
+							<li class="nav-item mr-3">
+								<a class="nav-link" href="#color">
 									<i class="fas fa-map-marker"></i> color
 								</a>
 							</li>
 
-							<li class="nav-item">
+							<li class="nav-item mr-3">
 								<a class="nav-link" href="#">
 									<span onclick="document.getElementById('id01').style.display='block'">log in</span>
 								</a>
-							</li>			
+							</li>	
+
+							<li class="nav-item current mr-3">
+								<a class="nav-link" href="#">
+									sign up
+								</a>
+							</li>
+
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
-
-
-
-	<div class="container-fluid">
-		<div class="container bg-light elementebi">
-						
-		</div>
-	</div>
-
-	
-
 
 	<div id="id01" class="modal">
 
@@ -99,7 +95,73 @@
 				<button class="loginn float-right" type="submit">Log In</button>
 			</div>
 		</form>
+	</div>
 
+
+	<div class="container">
+
+		<div class="col-lg-8 col-sm-12 mr-auto ml-auto">
+			<form class="registracia py-5" action="">
+				<div class="registration p-5">
+
+					<h1 class="text-center pb-3">Registration</h1>
+
+					<div class="row">
+
+						<div class="col-lg-6 col-sm-12">
+							<div class="form-group">
+								<label for="name">Firstname:</label>
+								<input type="text" class="form-control" id="name">
+							</div>
+						</div>
+						<div class="col-lg-6 col-sm-12">
+							<div class="form-group">
+								<label for="lastname">Lastname:</label>
+								<input type="text" class="form-control" id="lastname">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 col-sm-12">
+							<div class="form-group">
+								<label for="username">Username:</label>
+								<input type="text" class="form-control" id="username">
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-sm-12">
+							<div class="form-group">
+								<label for="email">Email address:</label>
+								<input type="email" class="form-control" id="email">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6 col-sm-12">
+							<div class="form-group">
+								<label for="pwd">Password:</label>
+								<input type="password" class="form-control" id="pwd">
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-sm-12">
+							<div class="form-group">
+								<label for="pwd">Repeat Password:</label>
+								<input type="password" class="form-control" id="pwd">
+							</div>
+						</div>
+					</div>
+
+					<div class="checkbox">
+						<label><input type="checkbox"> Remember me</label>
+					</div>
+					<button type="submit" class="btn reg">Sign Up</button>
+				</div>
+			</form>
+		</div>
 	</div>
 
 
@@ -119,29 +181,20 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="container-fluid bg-dark">
+		<div class="container">
+			<footer class="pt-4 pb-4">
+				<h3>Project author • <a href="https://fb.com/matematikosi.filosofosi"  target="_blank">Giorgi Samkharadze</a></h3>
+				<h3>Designer • <a href="https://fb.com/ximshiashvili" target="_blank">Giorgi Khimshiashvili</a></h3>
+				<h3>Front-end developer • <a href="https://fb.com/nickakhalaia" target="_blank">Nika Akhalaia</a></h3>
+			</footer>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/custom.js"></script>
 
 </body>
