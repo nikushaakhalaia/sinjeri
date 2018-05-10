@@ -109,27 +109,60 @@ width:340px;
 }
 
 .meter, .karat {
-	margin: 40px 0;
 	display: flex;
 	justify-content: center;
 }
+
+.meter button, .karat button {
+    font-size: 40px;
+    background: linear-gradient(to left, gold 0%, silver 90%);
+    font-weight: 700;
+    letter-spacing: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid gold; 
+    border-image: linear-gradient(100deg, gold, silver) 1;
+}
+
+.karat button {
+    background: linear-gradient(to right, gold 0%, silver 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid gold; 
+    border-image: linear-gradient(-100deg, gold, silver) 1;
+}
+
 
 button {
     border: none;
 }
 
-button:focus {
+/*button:focus {
     outline: none;
+}*/
+
+
+.kalkulatori, .shua select {
+    padding-left: 20px;
+	border: 3px solid transparent;
+	border-image: linear-gradient(50deg, gold, silver) 1;
 }
 
-.kalkulatori {
-	border: 3px solid transparent;
-	border-image: linear-gradient(-100deg, gold, silver) 1;
+.bolo select {
+    padding-left: 20px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(-50deg, gold, silver) 1;
 }
 
 .take input {
+    border: 3px solid transparent;
+    border-image: linear-gradient(50deg, gold, silver) 1;
 	margin-top: 10px;
 	padding: 10px 20px;
+}
+
+.take input:nth-child(2) {
+    border-image: linear-gradient(-50deg, gold, silver) 1;
 }
 
 .kalkulacia {
@@ -139,6 +172,14 @@ button:focus {
     color: #000;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.shedegi h3 {
+    text-align: center;
+    background-color: white;
+    border: 3px solid transparent;
+    border-image: linear-gradient(50deg, gold, silver) 1;
+    padding: 15px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -233,16 +274,15 @@ button:focus {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     opacity: 0.9;
-    padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: transparent;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 20% auto;
     width: 320px; /* Could be more or less, depending on screen size */
 }
 
