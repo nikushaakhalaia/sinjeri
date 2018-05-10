@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Sinjer • About Us</title>
@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<link rel="shortcut icon" type="image/png" href="img/logo.ico"/>
 
 	<meta property="fb:app_id" content="280537105745565"/>
 	<meta property="og:title" content="სინჯერი" />
@@ -34,7 +36,7 @@
 			<div class="container">
 				<nav class="navbar navbar-expand-lg navbar-dark py-2">
 					<a class="navbar-brand" href="#">
-						<img src="img/logo.png">
+						<img src="img/logo.png" alt="logo">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -60,15 +62,16 @@
 								</a>
 							</li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="#">
-									<span onclick="document.getElementById('id01').style.display='block'">log in</span>
+							<li class="nav-item mr-3">
+								<a class="nav-link">
+									<span onclick="document.getElementById('id01').style.display='block'"><i class="fas fa-sign-in-alt"></i>
+									log in</span>
 								</a>
 							</li>
 
-							<li class="nav-item mr-3">
+							<li class="nav-item">
 								<a class="nav-link" href="registration.html">
-									sign up
+									<i class="fas fa-user-plus"></i> sign up
 								</a>
 							</li>
 
@@ -134,64 +137,56 @@
 						<i class="fa fa-phone" aria-hidden="true"></i> GIVE US  A CALL
 						<p class="pl-3">+995 555 123 456</p>
 
-						<form id="contact-form" method="post" role="form">
+						<form id="contact-form" method="post">
 							<h4 class="pb-2">CONTACT FORM</h4>
 
-                        <div class="messages"></div>
+							<div class="messages"></div>
 
-                        <div class="controls">
+							<div class="controls">
 
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Lastname" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="EMAIL *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-send float-right" value="Send">
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                    </form>
-
-
-
-
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input id="form_name" type="text" name="name" class="form-control" placeholder="Firstname" required="required" data-error="Firstname is required.">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Lastname" required="required" data-error="Lastname is required.">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input id="form_email" type="email" name="email" class="form-control" placeholder="EMAIL *" required="required" data-error="Valid email is required.">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Phone">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<input type="submit" class="btn btn-send float-right" value="Send">
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</div>	
@@ -208,10 +203,10 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/custom.js"></script>
 
 </body>
 </html>
