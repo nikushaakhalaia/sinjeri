@@ -21,7 +21,7 @@ $('.slaideri').slick({
         slidesToScroll: 3,
         responsive: [
           {
-              breakpoint: 1100,
+              breakpoint: 1200,
               settings: {
                   slidesToShow: 8,
                   slidesToScroll: 2,
@@ -38,7 +38,7 @@ $('.slaideri').slick({
           },
 
           {
-              breakpoint: 550,
+              breakpoint: 650,
               settings: {
                   slidesToShow: 4,
                   slidesToScroll: 2
