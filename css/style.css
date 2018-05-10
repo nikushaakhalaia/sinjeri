@@ -22,8 +22,8 @@ nav img {
     border-bottom: 2px solid yellow;
 }
 
-#webmenu{
-width:340px;
+#webmenu {
+    width:340px;
 }
 
 .aboutus {
@@ -60,40 +60,11 @@ width:340px;
   font-weight: 700; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slaideri img {
     width: 30px;
     height: 30px;
     margin: 0 auto;
 }
-
-
 
 .contact {
 	border: 3px solid transparent;
@@ -132,14 +103,13 @@ width:340px;
     border-image: linear-gradient(-100deg, gold, silver) 1;
 }
 
-
 button {
     border: none;
 }
 
-/*button:focus {
+button:focus {
     outline: none;
-}*/
+}
 
 
 .kalkulatori, .shua select {
@@ -193,35 +163,10 @@ button {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn-send {
 	background: gold;
 	color: #000;
 }
-
 
 .modal input[type=text], input[type=password] {
 	color: #fff;
@@ -248,7 +193,6 @@ button {
     outline: none;
 }
 
-
 /* Set a style for all buttons */
 .loginn {
 	background: transparent;
@@ -263,7 +207,6 @@ button {
 .modal button:hover {
     opacity: 0.8;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -303,7 +246,6 @@ button {
     cursor: pointer;
 }
 
-/* Add Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
@@ -319,7 +261,6 @@ button {
     to {transform: scale(1)}
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
        display: block;
