@@ -142,14 +142,13 @@ button:focus {
 }
 
 .kalkulacia {
-    font-size: 40px;
-    background: linear-gradient(to left, gold 0%, silver 90%);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: gold;
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 25px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     border: 3px solid gold;
-    border-image: linear-gradient(100deg, gold, silver) 1;
+    border-image: linear-gradient(50deg, gold, silver) 1;
 }
 
 .shedegi h3 {
