@@ -143,8 +143,7 @@ button:focus {
 
 .kalkulacia {
     padding: 10px 30px;
-    border-radius: 30px;
-    color: gold;
+    color: #C79D3B;
     text-transform: uppercase;
     font-weight: 700;
     border: 3px solid gold;
