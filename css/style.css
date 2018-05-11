@@ -109,10 +109,6 @@ nav img {
     border-image: linear-gradient(-100deg, gold, silver) 1;
 }
 
-button {
-    border: none;
-}
-
 button:focus {
     outline: none;
 }
