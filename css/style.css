@@ -63,6 +63,15 @@ nav img {
     margin: 0 auto;
 }
 
+.slaideri h5 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.slaideri p {
+    margin-bottom: 0;
+}
+
 .contact {
 	border: 3px solid transparent;
 	border-image: linear-gradient(-100deg, gold, silver) 1;
